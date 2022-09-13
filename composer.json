@@ -1,17 +1,32 @@
 {
-    "name": "violet/class-scanner",
-    "description": "Class Scanner library provides a convenient interface for finding classes defined in PHP source code.",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Violet\\ClassScanner\\": "src/"
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "violet/class-scanner",
+                "description": "Class Scanner library provides a convenient interface for finding classes defined in PHP source code.",
+                "type": "library",
+                "source": {
+                    "url": "https://github.com/sreenivasulu-paruchuri/class-scanner.git",
+                    "type": "git"
+                },
+                "dist": {
+                    "url": "https://github.com/sreenivasulu-paruchuri/class-scanner/archive/refs/heads/master.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Violet\\ClassScanner\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Violet\\ClassScanner\\Tests\\": "tests/helpers/"
+                    }
+                }
+            }
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Violet\\ClassScanner\\Tests\\": "tests/helpers/"
-        }
-    },
+    ],
     "require": {
         "nikic/php-parser": "^4.2.1"
     },
