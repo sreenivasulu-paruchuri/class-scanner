@@ -1,4 +1,7 @@
 {
+    "name": "violet/class-scanner",
+    "description": "Class Scanner library provides a convenient interface for finding classes defined in PHP source code.",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Violet\\ClassScanner\\": "src/"
